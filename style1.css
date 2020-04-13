@@ -60,35 +60,28 @@ nav > ul li .selected {
   border-radius: 30px;
 }
 
-.content-container {
-  height: calc(100vh - 60px);
-  background-color: #ffb25b;
-}
-
-@media screen and (min-width: 550px) {
-  .content-container {
-    height: 100vh;
-    width: calc(100vw - 70px);
-    margin-left: 70px;
-    padding: 10px 10px 10px 0px;
-  }
-}
-
-.content-container .content {
+.content {
   overflow: hidden;
   background-color: white;
   height: 100%;
-  overflow-y: scroll;
+  margin-bottom: 60px;
 }
 
-.content-container .content > * {
+@media screen and (min-width: 550px) {
+  .content {
+    margin-bottom: 0;
+    margin-left: 70px;
+  }
+}
+
+.content > * {
   padding: 1em;
 }
 
-.content-container .content-title {
+.content-title {
   position: -webkit-sticky;
   position: sticky;
-  top: -1em;
+  top: 0;
   left: 0;
   padding: 1em;
   height: 80px;
@@ -97,7 +90,7 @@ nav > ul li .selected {
   border-radius: 20px;
 }
 
-.content-container .content-title h2 {
+.content-title h2 {
   margin: 0;
   height: 100%;
   line-height: 60px;

@@ -67,24 +67,30 @@ nav > ul {
 
 
 // MAIN //
-.content-container {
-  height: calc(100vh - #{$nav-dim-sm});
-  background-color: $primary-color;
-  // padding: 10px 10px 0px 10px;
+// .content-container {
+//   height: calc(100vh - #{$nav-dim-sm});
+//   background-color: $primary-color;
+//   // padding: 10px 10px 0px 10px;
 
-  @media screen and (min-width: 550px) {
-    height: 100vh;
-    width: calc(100vw - #{$nav-dim-lg});
-    margin-left: $nav-dim-lg;
-    padding: 10px 10px 10px 0px;
-  }
+  // @media screen and (min-width: 550px) {
+  //   height: 100vh;
+  //   width: calc(100vw - #{$nav-dim-lg});
+  //   margin-left: $nav-dim-lg;
+  //   padding: 10px 10px 10px 0px;
+  // }
 
   .content {
     overflow: hidden;
     background-color: white;
     height: 100%;
+    margin-bottom: $nav-dim-sm;
+
+    @media screen and (min-width: 550px) {
+      margin-bottom: 0;
+      margin-left: $nav-dim-lg;
+    }
     // border-radius: 20px;
-    overflow-y: scroll;
+    // overflow-y: scroll;
 
     &>* {
       padding: 1em;
@@ -92,7 +98,7 @@ nav > ul {
 
     &-title {
       position: sticky;
-      top: -1em;
+      top: 0;
       left: 0;
       padding: 1em;
       height: 80px;
@@ -106,7 +112,7 @@ nav > ul {
       }
     }
   }
-}
+// }
 
 
 // CONTENT //
