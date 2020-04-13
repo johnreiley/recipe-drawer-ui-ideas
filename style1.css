@@ -63,7 +63,6 @@ nav > ul li .selected {
 .content-container {
   height: calc(100vh - 60px);
   background-color: #ffb25b;
-  padding: 10px 10px 0px 10px;
 }
 
 @media screen and (min-width: 550px) {
@@ -79,7 +78,6 @@ nav > ul li .selected {
   overflow: hidden;
   background-color: white;
   height: 100%;
-  border-radius: 20px;
   overflow-y: scroll;
 }
 
@@ -92,8 +90,8 @@ nav > ul li .selected {
   position: sticky;
   top: -1em;
   left: 0;
-  height: 60px;
-  line-height: 40px;
+  padding: 1em;
+  height: 80px;
   background-color: white;
   color: #414141;
   border-radius: 20px;
@@ -101,6 +99,8 @@ nav > ul li .selected {
 
 .content-container .content-title h2 {
   margin: 0;
+  height: 100%;
+  line-height: 60px;
 }
 
 .categories {
@@ -141,7 +141,7 @@ nav > ul li .selected {
 }
 
 .blue {
-  background-color: rgba(84, 185, 253, 0.15);
+  background-color: #54b9fd;
 }
 
 .green {
@@ -149,7 +149,7 @@ nav > ul li .selected {
 }
 
 .yellow {
-  background-color: #f3f36f;
+  background-color: #f8f862;
 }
 
 .orange {

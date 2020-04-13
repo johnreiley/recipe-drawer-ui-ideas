@@ -70,7 +70,7 @@ nav > ul {
 .content-container {
   height: calc(100vh - #{$nav-dim-sm});
   background-color: $primary-color;
-  padding: 10px 10px 0px 10px;
+  // padding: 10px 10px 0px 10px;
 
   @media screen and (min-width: 550px) {
     height: 100vh;
@@ -83,7 +83,7 @@ nav > ul {
     overflow: hidden;
     background-color: white;
     height: 100%;
-    border-radius: 20px;
+    // border-radius: 20px;
     overflow-y: scroll;
 
     &>* {
@@ -94,13 +94,15 @@ nav > ul {
       position: sticky;
       top: -1em;
       left: 0;
-      height: 60px;
-      line-height: 40px;
+      padding: 1em;
+      height: 80px;
       background-color: white;
       color: $dark-gray;
       border-radius: 20px;
       h2 {
         margin: 0;
+        height: 100%;
+        line-height: 60px;
       }
     }
   }
