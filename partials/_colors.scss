@@ -11,3 +11,7 @@ $dark-gray: rgb(65, 65, 65);
 @mixin whiteToColor($color) {
   background: linear-gradient(to right, #ffffff, $color);
 }
+
+@mixin orangeGradient {
+  background: linear-gradient(to right, orange, $orange)
+}
