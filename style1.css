@@ -76,6 +76,7 @@ nav > ul li .selected {
 }
 
 .content-container .content {
+  overflow: hidden;
   background-color: white;
   height: 100%;
   border-radius: 20px;
@@ -107,43 +108,63 @@ nav > ul li .selected {
 }
 
 .categories .category {
-  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
   margin: 0 0 1em 0;
   border-radius: 10px;
-  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
-          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.151);
+  -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.055);
+          box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.055);
+  background-color: white;
+}
+
+.categories .category-icon {
+  display: inline-block;
+  margin: 0.5em 0 0.5em 0.5em;
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 50px;
+  color: white;
 }
 
 .categories .category-title {
-  color: white;
-  padding: 1em;
+  display: inline;
+  font-weight: normal;
+  color: #414141;
+  padding: 0 0.5em;
 }
 
-.categories .category.blue {
-  background-color: #54bafd;
+.blue {
+  background-color: rgba(84, 185, 253, 0.15);
 }
 
-.categories .category.green {
+.green {
   background-color: #5bc55b;
 }
 
-.categories .category.yellow {
+.yellow {
   background-color: #f3f36f;
 }
 
-.categories .category.orange {
+.orange {
   background-color: #f7c260;
 }
 
-.categories .category.red {
+.red {
   background-color: #f77575;
 }
 
-.categories .category.purple {
+.purple {
   background-color: #c772f8;
 }
 
-.categories .category.violet {
+.violet {
   background-color: #7b72f8;
 }
 /*# sourceMappingURL=style1.css.map */

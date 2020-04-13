@@ -1,4 +1,4 @@
-$blue: rgb(84, 186, 253);
+$blue: rgba(84, 185, 253, 0.15);
 $green: rgb(91, 197, 91);
 $yellow: rgb(243, 243, 111);
 $orange: rgb(247, 194, 96);
@@ -7,3 +7,7 @@ $purple: rgb(199, 114, 248);
 $violet: rgb(123, 114, 248);
 
 $dark-gray: rgb(65, 65, 65);
+
+@mixin whiteToColor($color) {
+  background: linear-gradient(to right, #ffffff, $color);
+}
